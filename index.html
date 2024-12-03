@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eksplorasi Wisata Alam</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Eksplorasi Wisata Alam Indonesia</h1>
+    <p>Menemukan keajaiban alam Indonesia yang penuh petualangan!</p>
+    <nav>
+      <div class="nav-container">
+        <a href="#" class="logo">Eksplorasi</a>
+        <ul class="nav-links">
+          <li><a href="#destinations">Destinasi</a></li>
+          <li><a href="#connect">Connect</a></li>
+          <li><a href="#feedback-form">Feedback</a></li>
+        </ul>
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+      <!-- Sidebar -->
+  <aside>
+    <section>
+      <h3>Biodata Penulis</h3>
+      <img src="img/foto profil aziz.jpeg" alt="Foto Penulis" class="profile-img">
+      <p><strong>Nama:</strong> M. Aziz Maulana</p>
+      <p><strong>Profesi:</strong> Penulis Wisata Alam</p>
+      <p><strong>Hobi:</strong> Mancing, Edit Video</p>
+    </section>
+  </aside>
+    <section id="destinations">
+      <article>
+        <h2>Gunung Bromo</h2>
+        <img src="img/gunung bromo.jpg" alt="Gunung Bromo" class="content-image" onclick="openModal(this)">
+        <p>Gunung Bromo menawarkan pemandangan matahari terbit yang tak tertandingi. Ajak teman-temanmu dan nikmati keindahan alamnya!</p>
+      </article>
+      <article>
+        <h2>Pulau Belitung</h2>
+        <img src="img/pulau belitung.jpg" alt="Pulau Belitung" class="content-image" onclick="openModal(this)">
+        <p>Pulau indah dengan pantai pasir putih yang dihiasi batu granit artistik dan air laut sejernih kristal.</p>
+      </article>
+      <article>
+        <h2>Danau Toba</h2>
+        <img src="img/Danau Toba.jpg" alt="Danau Toba" class="content-image" onclick="openModal(this)">
+        <p>Danau vulkanik terbesar di dunia dengan Pulau Samosir yang indah di tengahnya.</p>
+      </article>
+      <article>
+        <h2>Anak Gunung Krakatau</h2>
+        <img src="img/gunung krakatau.jpg" alt="Anak Gunung Krakatau" class="content-image" onclick="openModal(this)">
+        <p>Kepulauan vulkanik yang aktif di Selat Sunda dengan sejarah letusan yang dahsyat.</p>
+      </article>
+      <article>
+        <h2>Green Canyon</h2>
+        <img src="img/Green Canyon.jpg" alt="Green Canyon" class="content-image" onclick="openModal(this)">
+        <p>Perpaduan sungai, lembah hijau, dan stalaktit yang menakjubkan.</p>
+      </article>
+      <article>
+        <h2>Kawah Ijen</h2>
+        <img src="img/Kawah Ijen.jpg" alt="Kawah Ijen" class="content-image" onclick="openModal(this)">
+        <p>Gunung berapi yang terkenal dengan keindahan alam dan kawah birunya.</p>
+      </article>
+    </section>
+  </main>
+    <aside>
+      <section id="connect">
+      <h3>Connect</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/aziz.maulana164" target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/m-aziz-maulana" target="_blank">LinkedIn</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Berikan Ulasan Anda</h3>
+      <textarea id="feedback-form" placeholder="Tulis ulasan Anda di sini..."></textarea>
+      <button onclick="submitFeedback()">Kirim Ulasan</button>
+      <div class="contact-output">
+        <h3>Pesan</h3>
+        <textarea id="output" readonly></textarea>
+    </div>
+    </section>
+  </aside>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Eksplorasi Wisata Alam. Dibuat oleh M. Aziz Maulana</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
